@@ -27,3 +27,38 @@ main p {
   font-family: "Roboto", sans-serif;
   margin-top: 0;
 }
+
+img {
+  width: 100%;
+}
+
+.border {
+  background-color: #75544d;
+  background-size: cover;
+}
+
+/* Mobile Groups/Items */
+.group {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  flex: 1;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  flex-direction: column;
+  margin: 10px;
+}
+
+/* Desktop (graceful degradation)*/
+
+@media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
+  }
+}
